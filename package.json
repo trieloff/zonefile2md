@@ -11,6 +11,9 @@
     "semantic-release": "semantic-release",
     "prepare": "husky install"
   },
+  "bin": {
+    "zonefile2md": "src/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trieloff/zonefile2md"
@@ -45,5 +48,12 @@
   "lint-staged": {
     "*.js": "eslint",
     "*.cjs": "eslint"
+  },
+  "dependencies": {
+    "mdast-util-gfm": "3.0.0",
+    "mdast-util-to-markdown": "2.1.0",
+    "unified": "11.0.4",
+    "unist-builder": "4.0.0",
+    "zone-file": "1.0.0"
   }
 }
